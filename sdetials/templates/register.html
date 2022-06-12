@@ -1,0 +1,12 @@
+ {% include 'base.html' %}
+
+<!-- <h1>Hello, world!</h1> -->
+{% comment %} <div class="container"> {% endcomment %}
+  <form method="post">{%csrf_token%} {{form}}
+
+    <button btn btn-primary>
+        registered
+    </button>
+  </form>
+
+{% comment %} </div> {% endcomment %}

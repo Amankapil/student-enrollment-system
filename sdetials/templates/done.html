@@ -1,0 +1,19 @@
+{% include 'base.html' %}
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">student name</th>
+        <th scope="col">enrollment no</th>
+      </tr>
+    </thead>
+    {% for k in queryset %}
+    <tbody>
+      <tr>
+        {% comment %} <th scope="row">1</th> {% endcomment %}
+        {% comment %} <td>{{forloop.counter}}</td> {% endcomment %}
+        <td>{{k.Name}}</td>
+        <td>{{k.enrollment_no}}</td>
+      </tr>
+    </tbody>
+    {% endfor %}
+  </table> 

@@ -1,0 +1,7 @@
+{% include 'base.html' %}
+<form method="post">{%csrf_token%} {{form.as_p}}
+
+    <button btn btn-primary>
+        search
+    </button>
+  </form>
